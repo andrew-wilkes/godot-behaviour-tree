@@ -12,82 +12,82 @@ _global_script_classes=[ {
 "base": "Task",
 "class": "AlwaysFail",
 "language": "GDScript",
-"path": "res://AlwaysFail.gd"
+"path": "res://BehaviorTree/Decorators/AlwaysFail.gd"
 }, {
 "base": "Task",
 "class": "AlwaysSucceed",
 "language": "GDScript",
-"path": "res://AlwaysSucceed.gd"
+"path": "res://BehaviorTree/Decorators/AlwaysSucceed.gd"
 }, {
 "base": "Task",
 "class": "Counter",
 "language": "GDScript",
-"path": "res://Counter.gd"
+"path": "res://Tests/Leaves/Counter.gd"
 }, {
 "base": "Task",
 "class": "Increment",
 "language": "GDScript",
-"path": "res://Increment.gd"
+"path": "res://Tests/Leaves/Increment.gd"
 }, {
 "base": "Task",
 "class": "Invert",
 "language": "GDScript",
-"path": "res://Invert.gd"
+"path": "res://BehaviorTree/Decorators/Invert.gd"
 }, {
 "base": "Task",
 "class": "Leaf",
 "language": "GDScript",
-"path": "res://Leaf.gd"
+"path": "res://BehaviorTree/Leaf.gd"
 }, {
 "base": "Task",
 "class": "Limit",
 "language": "GDScript",
-"path": "res://Limit.gd"
+"path": "res://BehaviorTree/Decorators/Limit.gd"
 }, {
 "base": "Task",
 "class": "Parallel",
 "language": "GDScript",
-"path": "res://Parallel.gd"
+"path": "res://BehaviorTree/Composites/Parallel.gd"
 }, {
 "base": "Task",
 "class": "RandomSelector",
 "language": "GDScript",
-"path": "res://RandomSelector.gd"
+"path": "res://BehaviorTree/Composites/RandomSelector.gd"
 }, {
 "base": "Task",
 "class": "RandomSequence",
 "language": "GDScript",
-"path": "res://RandomSequence.gd"
+"path": "res://BehaviorTree/Composites/RandomSequence.gd"
 }, {
 "base": "Task",
 "class": "Repeat",
 "language": "GDScript",
-"path": "res://Repeat.gd"
+"path": "res://BehaviorTree/Decorators/Repeat.gd"
 }, {
 "base": "Task",
 "class": "Selector",
 "language": "GDScript",
-"path": "res://Selector.gd"
+"path": "res://BehaviorTree/Composites/Selector.gd"
 }, {
 "base": "Task",
 "class": "Sequence",
 "language": "GDScript",
-"path": "res://Sequence.gd"
+"path": "res://BehaviorTree/Composites/Sequence.gd"
 }, {
 "base": "Node",
 "class": "Task",
 "language": "GDScript",
-"path": "res://Task.gd"
+"path": "res://BehaviorTree/Task.gd"
 }, {
 "base": "Task",
 "class": "UntilFail",
 "language": "GDScript",
-"path": "res://UntilFail.gd"
+"path": "res://BehaviorTree/Decorators/UntilFail.gd"
 }, {
 "base": "Task",
 "class": "UntilSuccess",
 "language": "GDScript",
-"path": "res://UntilSuccess.gd"
+"path": "res://BehaviorTree/Decorators/UntilSuccess.gd"
 } ]
 _global_script_class_icons={
 "AlwaysFail": "",
@@ -111,7 +111,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Behavior Tree"
-run/main_scene="res://Test.tscn"
+run/main_scene="res://Tests/Test.tscn"
 config/icon="res://icon.png"
 
 [rendering]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://BT.gd" type="Script" id=1]
-[ext_resource path="res://UntilFail.gd" type="Script" id=2]
-[ext_resource path="res://Counter.gd" type="Script" id=3]
-[ext_resource path="res://Increment.gd" type="Script" id=4]
+[ext_resource path="res://Tests/BT.gd" type="Script" id=1]
+[ext_resource path="res://BehaviorTree/Decorators/UntilFail.gd" type="Script" id=2]
+[ext_resource path="res://Tests/Leaves/Counter.gd" type="Script" id=3]
+[ext_resource path="res://Tests/Leaves/Increment.gd" type="Script" id=4]
 
 [node name="Test" type="Node2D"]
 
