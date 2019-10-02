@@ -1,0 +1,64 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Task.gd" type="Script" id=1]
+[ext_resource path="res://Leaf.gd" type="Script" id=2]
+[ext_resource path="res://AlwaysFail.gd" type="Script" id=3]
+[ext_resource path="res://AlwaysSucceed.gd" type="Script" id=4]
+[ext_resource path="res://Invert.gd" type="Script" id=5]
+[ext_resource path="res://Limit.gd" type="Script" id=6]
+[ext_resource path="res://Repeat.gd" type="Script" id=7]
+[ext_resource path="res://UntilFail.gd" type="Script" id=8]
+[ext_resource path="res://UntilSuccess.gd" type="Script" id=9]
+[ext_resource path="res://Selector.gd" type="Script" id=10]
+[ext_resource path="res://RandomSelector.gd" type="Script" id=11]
+[ext_resource path="res://Sequence.gd" type="Script" id=12]
+[ext_resource path="res://RandomSequence.gd" type="Script" id=13]
+[ext_resource path="res://Parallel.gd" type="Script" id=14]
+
+[node name="BehaviorTree" type="Node"]
+
+[node name="Task" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="Leaf" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="Decorator" type="Node" parent="."]
+
+[node name="AlwaysFail" type="Node" parent="Decorator"]
+script = ExtResource( 3 )
+
+[node name="AlwaysSucceed" type="Node" parent="Decorator"]
+script = ExtResource( 4 )
+
+[node name="Invert" type="Node" parent="Decorator"]
+script = ExtResource( 5 )
+
+[node name="Limit" type="Node" parent="Decorator"]
+script = ExtResource( 6 )
+
+[node name="Repeat" type="Node" parent="Decorator"]
+script = ExtResource( 7 )
+
+[node name="UntilFail" type="Node" parent="Decorator"]
+script = ExtResource( 8 )
+
+[node name="UntilSuccess" type="Node" parent="Decorator"]
+script = ExtResource( 9 )
+
+[node name="Composite" type="Node" parent="."]
+
+[node name="Selector" type="Node" parent="Composite"]
+script = ExtResource( 10 )
+
+[node name="RandomSelector" type="Node" parent="Composite"]
+script = ExtResource( 11 )
+
+[node name="Sequence" type="Node" parent="Composite"]
+script = ExtResource( 12 )
+
+[node name="RandomSequence" type="Node" parent="Composite"]
+script = ExtResource( 13 )
+
+[node name="Parallel" type="Node" parent="Composite"]
+script = ExtResource( 14 )

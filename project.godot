@@ -1,0 +1,119 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Task",
+"class": "AlwaysFail",
+"language": "GDScript",
+"path": "res://AlwaysFail.gd"
+}, {
+"base": "Task",
+"class": "AlwaysSucceed",
+"language": "GDScript",
+"path": "res://AlwaysSucceed.gd"
+}, {
+"base": "Task",
+"class": "Counter",
+"language": "GDScript",
+"path": "res://Counter.gd"
+}, {
+"base": "Task",
+"class": "Increment",
+"language": "GDScript",
+"path": "res://Increment.gd"
+}, {
+"base": "Task",
+"class": "Invert",
+"language": "GDScript",
+"path": "res://Invert.gd"
+}, {
+"base": "Task",
+"class": "Leaf",
+"language": "GDScript",
+"path": "res://Leaf.gd"
+}, {
+"base": "Task",
+"class": "Limit",
+"language": "GDScript",
+"path": "res://Limit.gd"
+}, {
+"base": "Task",
+"class": "Parallel",
+"language": "GDScript",
+"path": "res://Parallel.gd"
+}, {
+"base": "Task",
+"class": "RandomSelector",
+"language": "GDScript",
+"path": "res://RandomSelector.gd"
+}, {
+"base": "Task",
+"class": "RandomSequence",
+"language": "GDScript",
+"path": "res://RandomSequence.gd"
+}, {
+"base": "Task",
+"class": "Repeat",
+"language": "GDScript",
+"path": "res://Repeat.gd"
+}, {
+"base": "Task",
+"class": "Selector",
+"language": "GDScript",
+"path": "res://Selector.gd"
+}, {
+"base": "Task",
+"class": "Sequence",
+"language": "GDScript",
+"path": "res://Sequence.gd"
+}, {
+"base": "Node",
+"class": "Task",
+"language": "GDScript",
+"path": "res://Task.gd"
+}, {
+"base": "Task",
+"class": "UntilFail",
+"language": "GDScript",
+"path": "res://UntilFail.gd"
+}, {
+"base": "Task",
+"class": "UntilSuccess",
+"language": "GDScript",
+"path": "res://UntilSuccess.gd"
+} ]
+_global_script_class_icons={
+"AlwaysFail": "",
+"AlwaysSucceed": "",
+"Counter": "",
+"Increment": "",
+"Invert": "",
+"Leaf": "",
+"Limit": "",
+"Parallel": "",
+"RandomSelector": "",
+"RandomSequence": "",
+"Repeat": "",
+"Selector": "",
+"Sequence": "",
+"Task": "",
+"UntilFail": "",
+"UntilSuccess": ""
+}
+
+[application]
+
+config/name="Behavior Tree"
+run/main_scene="res://Test.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
