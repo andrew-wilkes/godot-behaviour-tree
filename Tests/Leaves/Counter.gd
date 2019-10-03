@@ -12,9 +12,7 @@ func run():
 func _process(delta):
 	if status == RUNNING:
 		count += 1
-		if count <= MAX:
-			tree.show_value("Count", count)
-		else:
+		if count > MAX:
 			count = 0
-			success()
+			fail()
 	return delta

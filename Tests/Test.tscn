@@ -1,62 +1,22 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Tests/BT.gd" type="Script" id=1]
+[ext_resource path="res://Tests/TestRunner.gd" type="Script" id=1]
 [ext_resource path="res://BehaviorTree/Decorators/UntilFail.gd" type="Script" id=2]
 [ext_resource path="res://Tests/Leaves/Counter.gd" type="Script" id=3]
 [ext_resource path="res://Tests/Leaves/Increment.gd" type="Script" id=4]
 
-[node name="Test" type="Node2D"]
+[node name="Test" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 
-[node name="BT" type="Node" parent="."]
+[node name="TestRunner" type="Node" parent="."]
 script = ExtResource( 1 )
 
-[node name="UntilFail" type="Node" parent="BT"]
+[node name="UntilFail" type="Node" parent="TestRunner"]
 script = ExtResource( 2 )
 
-[node name="Counter" type="Node" parent="BT/UntilFail"]
+[node name="Counter" type="Node" parent="TestRunner/UntilFail"]
 script = ExtResource( 3 )
-
-[node name="GUI" type="Control" parent="."]
-editor/display_folded = true
-margin_left = 19.0
-margin_top = 22.0
-margin_right = 59.0
-margin_bottom = 62.0
-
-[node name="VBox" type="VBoxContainer" parent="GUI"]
-margin_right = 130.0
-margin_bottom = 50.0
-
-[node name="HBox" type="HBoxContainer" parent="GUI/VBox"]
-margin_right = 130.0
-margin_bottom = 14.0
-
-[node name="Label" type="Label" parent="GUI/VBox/HBox"]
-margin_right = 43.0
-margin_bottom = 14.0
-text = "Status:"
-
-[node name="Status" type="Label" parent="GUI/VBox/HBox"]
-margin_left = 47.0
-margin_right = 53.0
-margin_bottom = 14.0
-text = "?"
-
-[node name="HBox2" type="HBoxContainer" parent="GUI/VBox"]
-margin_top = 18.0
-margin_right = 130.0
-margin_bottom = 32.0
-
-[node name="Label" type="Label" parent="GUI/VBox/HBox2"]
-margin_right = 41.0
-margin_bottom = 14.0
-text = "Count:"
-
-[node name="Count" type="Label" parent="GUI/VBox/HBox2"]
-margin_left = 45.0
-margin_right = 53.0
-margin_bottom = 14.0
-text = "0"
 
 [node name="Leaves" type="Node" parent="."]
 
@@ -65,3 +25,14 @@ script = ExtResource( 3 )
 
 [node name="Increment" type="Node" parent="Leaves"]
 script = ExtResource( 4 )
+
+[node name="Results" type="ItemList" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+rect_min_size = Vector2( 99, 99 )
+custom_constants/vseparation = 10
+max_columns = 2
