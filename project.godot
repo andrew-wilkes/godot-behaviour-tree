@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Tests/Leaves/Counter.gd"
 }, {
+"base": "StateSequence",
+"class": "FtoS",
+"language": "GDScript",
+"path": "res://Tests/Leaves/f-s.gd"
+}, {
 "base": "Task",
 "class": "Increment",
 "language": "GDScript",
@@ -79,6 +84,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Tests/Leaves/StateSequence.gd"
 }, {
+"base": "StateSequence",
+"class": "StoF",
+"language": "GDScript",
+"path": "res://Tests/Leaves/s-f.gd"
+}, {
 "base": "Node",
 "class": "Task",
 "language": "GDScript",
@@ -98,6 +108,7 @@ _global_script_class_icons={
 "AlwaysFail": "",
 "AlwaysSucceed": "",
 "Counter": "",
+"FtoS": "",
 "Increment": "",
 "Invert": "",
 "Leaf": "",
@@ -109,6 +120,7 @@ _global_script_class_icons={
 "Selector": "",
 "Sequence": "",
 "StateSequence": "",
+"StoF": "",
 "Task": "",
 "UntilFail": "",
 "UntilSuccess": ""

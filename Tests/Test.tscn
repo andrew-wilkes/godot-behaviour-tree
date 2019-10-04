@@ -19,13 +19,13 @@ script = ExtResource( 1 )
 [node name="UntilFail" type="Node" parent="TestRunner"]
 script = ExtResource( 2 )
 
-[node name="s-f" type="Node" parent="TestRunner/UntilFail"]
+[node name="StoF" type="Node" parent="TestRunner/UntilFail"]
 script = ExtResource( 3 )
 
 [node name="UntilSuccess" type="Node" parent="TestRunner"]
 script = ExtResource( 4 )
 
-[node name="f-s" type="Node" parent="TestRunner/UntilSuccess"]
+[node name="FtoS" type="Node" parent="TestRunner/UntilSuccess"]
 script = ExtResource( 5 )
 
 [node name="Leaves" type="Node" parent="."]
@@ -38,6 +38,12 @@ script = ExtResource( 7 )
 
 [node name="StateSequence" type="Node" parent="Leaves"]
 script = ExtResource( 8 )
+
+[node name="s-f" type="Node" parent="Leaves"]
+script = ExtResource( 3 )
+
+[node name="f-s" type="Node" parent="Leaves"]
+script = ExtResource( 5 )
 
 [node name="Results" type="ItemList" parent="."]
 anchor_right = 1.0
