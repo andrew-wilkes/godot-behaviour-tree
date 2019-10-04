@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Tests/Leaves/Counter.gd"
 }, {
-"base": "StateSequence",
+"base": "StatusSequence",
 "class": "FtoS",
 "language": "GDScript",
 "path": "res://Tests/Leaves/f-s.gd"
@@ -80,11 +80,11 @@ _global_script_classes=[ {
 "path": "res://BehaviorTree/Composites/Sequence.gd"
 }, {
 "base": "Task",
-"class": "StateSequence",
+"class": "StatusSequence",
 "language": "GDScript",
-"path": "res://Tests/Leaves/StateSequence.gd"
+"path": "res://Tests/Leaves/StatusSequence.gd"
 }, {
-"base": "StateSequence",
+"base": "StatusSequence",
 "class": "StoF",
 "language": "GDScript",
 "path": "res://Tests/Leaves/s-f.gd"
@@ -119,7 +119,7 @@ _global_script_class_icons={
 "Repeat": "",
 "Selector": "",
 "Sequence": "",
-"StateSequence": "",
+"StatusSequence": "",
 "StoF": "",
 "Task": "",
 "UntilFail": "",

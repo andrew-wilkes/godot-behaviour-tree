@@ -1,6 +1,6 @@
 extends Task
 
-class_name StateSequence
+class_name StatusSequence
 
 # List of successive status values
 var sequence = [SUCCEEDED, FAILED]

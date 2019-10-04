@@ -7,7 +7,7 @@
 [ext_resource path="res://Tests/Leaves/f-s.gd" type="Script" id=5]
 [ext_resource path="res://Tests/Leaves/Counter.gd" type="Script" id=6]
 [ext_resource path="res://Tests/Leaves/Increment.gd" type="Script" id=7]
-[ext_resource path="res://Tests/Leaves/StateSequence.gd" type="Script" id=8]
+[ext_resource path="res://Tests/Leaves/StatusSequence.gd" type="Script" id=8]
 
 [node name="Test" type="Control"]
 anchor_right = 1.0
@@ -36,7 +36,7 @@ script = ExtResource( 6 )
 [node name="Increment" type="Node" parent="Leaves"]
 script = ExtResource( 7 )
 
-[node name="StateSequence" type="Node" parent="Leaves"]
+[node name="StatusSequence" type="Node" parent="Leaves"]
 script = ExtResource( 8 )
 
 [node name="s-f" type="Node" parent="Leaves"]

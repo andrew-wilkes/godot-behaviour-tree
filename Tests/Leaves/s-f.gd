@@ -1,4 +1,4 @@
-extends StateSequence
+extends StatusSequence
 
 class_name StoF
 
