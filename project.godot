@@ -77,7 +77,7 @@ _global_script_classes=[ {
 "base": "Task",
 "class": "StateSequence",
 "language": "GDScript",
-"path": "res://Tests/StateSequence.gd"
+"path": "res://Tests/Leaves/StateSequence.gd"
 }, {
 "base": "Node",
 "class": "Task",

@@ -4,7 +4,8 @@ var list
 var idx = 0
 
 var TESTS = [
-	["Until Fail", SUCCEEDED]
+	["Until Fail", SUCCEEDED],
+	["Until Success", SUCCEEDED]
 ]
 
 func _ready():

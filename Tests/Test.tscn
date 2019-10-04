@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Tests/TestRunner.gd" type="Script" id=1]
 [ext_resource path="res://BehaviorTree/Decorators/UntilFail.gd" type="Script" id=2]
-[ext_resource path="res://Tests/s-f.gd" type="Script" id=3]
-[ext_resource path="res://Tests/Leaves/Counter.gd" type="Script" id=4]
-[ext_resource path="res://Tests/Leaves/Increment.gd" type="Script" id=5]
-[ext_resource path="res://Tests/StateSequence.gd" type="Script" id=6]
+[ext_resource path="res://Tests/Leaves/s-f.gd" type="Script" id=3]
+[ext_resource path="res://BehaviorTree/Decorators/UntilSuccess.gd" type="Script" id=4]
+[ext_resource path="res://Tests/Leaves/f-s.gd" type="Script" id=5]
+[ext_resource path="res://Tests/Leaves/Counter.gd" type="Script" id=6]
+[ext_resource path="res://Tests/Leaves/Increment.gd" type="Script" id=7]
+[ext_resource path="res://Tests/Leaves/StateSequence.gd" type="Script" id=8]
 
 [node name="Test" type="Control"]
 anchor_right = 1.0
@@ -20,16 +22,22 @@ script = ExtResource( 2 )
 [node name="s-f" type="Node" parent="TestRunner/UntilFail"]
 script = ExtResource( 3 )
 
+[node name="UntilSuccess" type="Node" parent="TestRunner"]
+script = ExtResource( 4 )
+
+[node name="f-s" type="Node" parent="TestRunner/UntilSuccess"]
+script = ExtResource( 5 )
+
 [node name="Leaves" type="Node" parent="."]
 
 [node name="Counter" type="Node" parent="Leaves"]
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Increment" type="Node" parent="Leaves"]
-script = ExtResource( 5 )
+script = ExtResource( 7 )
 
 [node name="StateSequence" type="Node" parent="Leaves"]
-script = ExtResource( 6 )
+script = ExtResource( 8 )
 
 [node name="Results" type="ItemList" parent="."]
 anchor_right = 1.0
