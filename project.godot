@@ -74,6 +74,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://BehaviorTree/Composites/Sequence.gd"
 }, {
+"base": "Task",
+"class": "StateSequence",
+"language": "GDScript",
+"path": "res://Tests/StateSequence.gd"
+}, {
 "base": "Node",
 "class": "Task",
 "language": "GDScript",
@@ -103,6 +108,7 @@ _global_script_class_icons={
 "Repeat": "",
 "Selector": "",
 "Sequence": "",
+"StateSequence": "",
 "Task": "",
 "UntilFail": "",
 "UntilSuccess": ""

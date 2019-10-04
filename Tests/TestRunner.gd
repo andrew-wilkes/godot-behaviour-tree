@@ -4,12 +4,12 @@ var list
 var idx = 0
 
 var TESTS = [
-	["Test 1", SUCCEEDED]
+	["Until Fail", SUCCEEDED]
 ]
 
 func _ready():
 	list = get_node("/root/Test/Results")
-	add_result("Test description", "Result")
+	add_result("Test", "Result")
 	tree = self
 	start()
 	status = RUNNING
@@ -37,3 +37,9 @@ func add_result(description, result):
 func log_result():
 	var result = "Pass" if status == TESTS[idx][1] else "Fail"
 	add_result(TESTS[idx][0], result)
+	# Move to next test
+	idx += 1
+	if idx < TESTS.size():
+		status = RUNNING
+	else:
+		add_result("FINISHED", "")
