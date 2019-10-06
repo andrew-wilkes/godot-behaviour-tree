@@ -13,7 +13,7 @@ enum {
 
 var control = null
 var tree = null
-var guard = null
+# var guard = null
 var status = FRESH
 
 # Final methods
@@ -45,13 +45,13 @@ func run():
 	pass
 
 func child_success():
-	pass
+	success()
 
 func child_fail():
-	pass
+	fail()
 
 func child_running():
-	pass
+	running()
 
 # Non-final non-abstact methods
 func start():

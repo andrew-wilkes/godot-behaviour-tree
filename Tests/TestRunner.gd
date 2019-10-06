@@ -2,15 +2,36 @@ extends Task
 
 var list
 var idx = 0
+var num_failures = 0
 
 var TESTS = [
 	["Until Fail", SUCCEEDED],
-	["Until Success", SUCCEEDED]
+	["Until Success", SUCCEEDED],
+	["Always Fail", FAILED],
+	["Always Succeed", SUCCEEDED],
+	["Invert Succeed", FAILED],
+	["Invert Fail", SUCCEEDED],
+	["Limit Check Over", FAILED],
+	["Limit Check Under", SUCCEEDED],
+	["Repeat x 5", SUCCEEDED],
+	["Infinite Repeat", FAILED],
+	["Parallel Sequence Succeed", SUCCEEDED],
+	["Parallel Sequence Fail", FAILED],
+	["Parallel Selector Succeed", SUCCEEDED],
+	["Parallel Selector Fail", FAILED],
+	["Selector Succeed", SUCCEEDED],
+	["Selector Fail", FAILED],
+	["Random Selector Succeed", SUCCEEDED],
+	["Random Selector Fail", FAILED],
+	["Sequence Succeed", SUCCEEDED],
+	["Sequence Fail", FAILED],
+	["Random Sequence Succeed", SUCCEEDED],
+	["Random Sequence Fail", FAILED]
 ]
 
 func _ready():
 	list = get_node("/root/Test/Results")
-	add_result("Test", "Result")
+	add_result("TEST", "RESULT")
 	tree = self
 	start()
 	status = RUNNING
@@ -27,7 +48,7 @@ func child_fail():
 	log_result()
 
 func _process(delta):
-	if status == RUNNING:
+	if status == RUNNING and idx < TESTS.size():
 		get_child(idx).run()
 	return delta
 
@@ -36,11 +57,20 @@ func add_result(description, result):
 	list.add_item(result)
 
 func log_result():
-	var result = "Pass" if status == TESTS[idx][1] else "Fail"
+	var result = "Pass"
+	if status != TESTS[idx][1]:
+		num_failures += 1
+		result = "Fail"
 	add_result(TESTS[idx][0], result)
 	# Move to next test
 	idx += 1
 	if idx < TESTS.size():
 		status = RUNNING
 	else:
-		add_result("FINISHED", "")
+		if num_failures > 0:
+			status = FAILED
+			result = "FAILED"
+		else:
+			status = SUCCEEDED
+			result = "PASSED"
+		add_result("FINISHED", result)

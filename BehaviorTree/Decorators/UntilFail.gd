@@ -1,14 +1,16 @@
 extends Task
 
+# Only reports a failure
+
 class_name UntilFail
 
 func run():
+	get_child(0).run()
 	running()
 
-func _process(delta):
-	if status == RUNNING:
-		get_child(0).run()
-	return delta
+# Ignore child success
+func child_success():
+	pass
 
 func child_fail():
 	success()

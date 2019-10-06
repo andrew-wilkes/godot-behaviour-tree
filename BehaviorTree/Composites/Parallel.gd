@@ -1,5 +1,7 @@
 extends Task
 
+# Run all child Tasks together in SEQUENCE or SELECTOR policy mode
+
 class_name Parallel
 
 enum { SEQUENCE, SELECTOR }
@@ -15,7 +17,7 @@ func run():
 
 func child_success():
 	num_results += 1
-	if policy == SEQUENCE:
+	if policy == bool(SEQUENCE):
 		if num_results >= get_child_count():
 			num_results = 0
 			success()
@@ -24,7 +26,7 @@ func child_success():
 
 func child_fail():
 	num_results += 1
-	if policy == SELECTOR:
+	if policy == bool(SELECTOR):
 		if num_results >= get_child_count():
 			num_results = 0
 			fail()

@@ -1,5 +1,7 @@
 extends Task
 
+# Simulate a sequence of responses
+
 class_name StatusSequence
 
 # List of successive status values

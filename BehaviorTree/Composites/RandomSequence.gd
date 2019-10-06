@@ -1,5 +1,7 @@
 extends Task
 
+# All randomly selected children must succeed
+
 class_name RandomSequence
 
 var sequence

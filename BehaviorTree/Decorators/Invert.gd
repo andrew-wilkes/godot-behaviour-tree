@@ -1,5 +1,7 @@
 extends Task
 
+# Invert the result
+
 class_name Invert
 
 func run():
