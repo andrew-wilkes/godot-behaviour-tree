@@ -2,7 +2,7 @@ extends Task
 
 # All children must run successfully
 
-class_name Sequence
+class_name Sequence, "res://icons/sequence.png"
 
 var current_child = 0
 

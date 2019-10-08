@@ -2,7 +2,7 @@ extends Task
 
 # One of the children must run successfully
 
-class_name Selector
+class_name Selector, "res://icons/selector.png"
 
 var current_child = 0
 

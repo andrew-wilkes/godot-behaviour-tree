@@ -2,7 +2,7 @@ extends Task
 
 # Will fail if the child task succeeds and gets called again too many times
 
-class_name Limit
+class_name Limit, "res://icons/limit.png"
 
 # Maximum number of times to run
 export(int) var LIMIT = 4

@@ -2,7 +2,7 @@ extends Task
 
 # Run all child Tasks together in SEQUENCE or SELECTOR policy mode
 
-class_name Parallel
+class_name Parallel, "res://icons/parallel.png"
 
 enum { SEQUENCE, SELECTOR }
 

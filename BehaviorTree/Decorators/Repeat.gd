@@ -2,7 +2,7 @@ extends Task
 
 # Repeats the child Task and reports Success after repeating unless it fails
 
-class_name Repeat
+class_name Repeat, "res://icons/repeat.png"
 
 # Number of times to run or zero for infinite
 export(int) var LIMIT = 5

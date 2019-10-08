@@ -1,6 +1,6 @@
 extends Task
 
-class_name AlwaysFail
+class_name AlwaysFail, "res://icons/always-fail.png"
 
 func run():
 	if get_child_count() > 0:

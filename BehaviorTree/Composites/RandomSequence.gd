@@ -2,7 +2,7 @@ extends Task
 
 # All randomly selected children must succeed
 
-class_name RandomSequence
+class_name RandomSequence, "res://icons/random-sequence.png"
 
 var sequence
 var idx = 0
