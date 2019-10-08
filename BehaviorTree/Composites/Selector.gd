@@ -1,6 +1,6 @@
 extends Task
 
-class_name Selector
+class_name Selector, "res://icons/selector.png"
 
 var current_child = 0
 

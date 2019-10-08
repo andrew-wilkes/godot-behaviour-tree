@@ -1,6 +1,6 @@
 extends Task
 
-class_name Parallel
+class_name Parallel, "res://icons/parallel.png"
 
 enum { SEQUENCE, SELECTOR }
 

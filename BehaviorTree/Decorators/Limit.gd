@@ -1,6 +1,6 @@
 extends Task
 
-class_name Limit
+class_name Limit, "res://icons/limit.png"
 
 # Maximum number of times to run
 export(int) var LIMIT = 100

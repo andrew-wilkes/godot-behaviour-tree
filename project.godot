@@ -105,25 +105,25 @@ _global_script_classes=[ {
 "path": "res://BehaviorTree/Decorators/UntilSuccess.gd"
 } ]
 _global_script_class_icons={
-"AlwaysFail": "",
-"AlwaysSucceed": "",
+"AlwaysFail": "res://icons/always-fail.png",
+"AlwaysSucceed": "res://icons/always-succeed.png",
 "Counter": "",
 "FtoS": "",
 "Increment": "",
-"Invert": "",
+"Invert": "res://icons/invert.png",
 "Leaf": "",
-"Limit": "",
-"Parallel": "",
-"RandomSelector": "",
-"RandomSequence": "",
-"Repeat": "",
-"Selector": "",
-"Sequence": "",
+"Limit": "res://icons/limit.png",
+"Parallel": "res://icons/parallel.png",
+"RandomSelector": "res://icons/random-selector.png",
+"RandomSequence": "res://icons/random-sequence.png",
+"Repeat": "res://icons/repeat.png",
+"Selector": "res://icons/selector.png",
+"Sequence": "res://icons/sequence.png",
 "StatusSequence": "",
 "StoF": "",
 "Task": "",
-"UntilFail": "",
-"UntilSuccess": ""
+"UntilFail": "res://icons/until-fail.png",
+"UntilSuccess": "res://icons/until-success.png"
 }
 
 [application]

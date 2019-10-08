@@ -1,6 +1,6 @@
 extends Task
 
-class_name UntilFail
+class_name UntilFail, "res://icons/until-fail.png"
 
 func run():
 	running()

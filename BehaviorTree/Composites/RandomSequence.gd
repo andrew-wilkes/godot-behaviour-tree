@@ -1,6 +1,6 @@
 extends Task
 
-class_name RandomSequence
+class_name RandomSequence, "res://icons/random-sequence.png"
 
 var sequence
 var idx = 0
