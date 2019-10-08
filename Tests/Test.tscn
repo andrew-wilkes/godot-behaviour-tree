@@ -90,7 +90,6 @@ script = ExtResource( 11 )
 num_calls = 6
 
 [node name="Limitx4" type="Node" parent="TestRunner/Callx6"]
-editor/display_folded = true
 script = ExtResource( 12 )
 
 [node name="LimitCheck" type="Node" parent="TestRunner/Callx6/Limitx4"]
@@ -239,6 +238,7 @@ editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="Sequence" type="Node" parent="TestRunner/SequenceSucceed"]
+editor/display_folded = true
 script = ExtResource( 19 )
 
 [node name="AlwaysSucceed" type="Node" parent="TestRunner/SequenceSucceed/Sequence"]
@@ -302,7 +302,6 @@ script = ExtResource( 6 )
 script = ExtResource( 8 )
 
 [node name="Leaves" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Increment" type="Node" parent="Leaves"]
 script = SubResource( 1 )

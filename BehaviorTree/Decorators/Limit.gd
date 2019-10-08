@@ -22,4 +22,5 @@ func child_success():
 		success()
 
 func child_fail():
+	count = 0
 	fail()
