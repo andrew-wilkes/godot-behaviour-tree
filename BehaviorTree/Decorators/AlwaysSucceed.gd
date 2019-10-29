@@ -10,3 +10,7 @@ func run():
 # Ignore child failure
 func child_fail():
 	pass
+
+# Ignore child success
+func child_success():
+	pass

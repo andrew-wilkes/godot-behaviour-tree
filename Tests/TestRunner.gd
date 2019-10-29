@@ -47,10 +47,9 @@ func child_fail():
 	status = FAILED
 	log_result()
 
-func _process(delta):
+func _process(_delta):
 	if status == RUNNING and idx < TESTS.size():
 		get_child(idx).run()
-	return delta
 
 func add_result(description, result):
 	list.add_item(description)
