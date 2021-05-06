@@ -43,49 +43,42 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="UntilFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 2 )
 
 [node name="StoF" type="Node" parent="TestRunner/UntilFail"]
 script = ExtResource( 3 )
 
 [node name="UntilSuccess" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 4 )
 
 [node name="FtoS" type="Node" parent="TestRunner/UntilSuccess"]
 script = ExtResource( 5 )
 
 [node name="AlwaysFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 6 )
 
 [node name="Succeed" type="Node" parent="TestRunner/AlwaysFail"]
 script = ExtResource( 7 )
 
 [node name="AlwaysSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 8 )
 
 [node name="Fail" type="Node" parent="TestRunner/AlwaysSucceed"]
 script = ExtResource( 9 )
 
 [node name="Invert1" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 10 )
 
 [node name="Succeed" type="Node" parent="TestRunner/Invert1"]
 script = ExtResource( 7 )
 
 [node name="Invert2" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 10 )
 
 [node name="Fail" type="Node" parent="TestRunner/Invert2"]
 script = ExtResource( 9 )
 
 [node name="Callx6" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 11 )
 num_calls = 6
 
@@ -96,7 +89,6 @@ script = ExtResource( 12 )
 script = ExtResource( 13 )
 
 [node name="Callx3" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 11 )
 num_calls = 3
 
@@ -107,14 +99,12 @@ script = ExtResource( 12 )
 script = ExtResource( 13 )
 
 [node name="Repeatx5" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 14 )
 
 [node name="LimitCheck" type="Node" parent="TestRunner/Repeatx5"]
 script = ExtResource( 13 )
 
 [node name="RepeatInf" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 14 )
 LIMIT = 0
 
@@ -122,7 +112,6 @@ LIMIT = 0
 script = ExtResource( 13 )
 
 [node name="ParallelSeqSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 15 )
 
 [node name="AlwaysSucceed" type="Node" parent="TestRunner/ParallelSeqSucceed"]
@@ -135,7 +124,6 @@ script = ExtResource( 8 )
 script = ExtResource( 8 )
 
 [node name="ParallelSeqFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 15 )
 
 [node name="AlwaysSucceed" type="Node" parent="TestRunner/ParallelSeqFail"]
@@ -148,7 +136,6 @@ script = ExtResource( 6 )
 script = ExtResource( 8 )
 
 [node name="ParallelSelSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 15 )
 policy = true
 
@@ -162,7 +149,6 @@ script = ExtResource( 6 )
 script = ExtResource( 8 )
 
 [node name="ParallelSelFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 15 )
 policy = true
 
@@ -176,7 +162,6 @@ script = ExtResource( 6 )
 script = ExtResource( 6 )
 
 [node name="SelectorSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="Selector" type="Node" parent="TestRunner/SelectorSucceed"]
@@ -192,7 +177,6 @@ script = ExtResource( 6 )
 script = ExtResource( 8 )
 
 [node name="SelectorFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="Selector" type="Node" parent="TestRunner/SelectorFail"]
@@ -205,7 +189,6 @@ script = ExtResource( 6 )
 script = ExtResource( 6 )
 
 [node name="RandomSelectorSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="RandomSelector" type="Node" parent="TestRunner/RandomSelectorSucceed"]
@@ -218,7 +201,6 @@ script = ExtResource( 8 )
 script = ExtResource( 8 )
 
 [node name="RandomSelectorFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="RandomSelector" type="Node" parent="TestRunner/RandomSelectorFail"]
@@ -234,11 +216,9 @@ script = ExtResource( 6 )
 script = ExtResource( 6 )
 
 [node name="SequenceSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="Sequence" type="Node" parent="TestRunner/SequenceSucceed"]
-editor/display_folded = true
 script = ExtResource( 19 )
 
 [node name="AlwaysSucceed" type="Node" parent="TestRunner/SequenceSucceed/Sequence"]
@@ -251,7 +231,6 @@ script = ExtResource( 8 )
 script = ExtResource( 8 )
 
 [node name="SequenceFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="Sequence" type="Node" parent="TestRunner/SequenceFail"]
@@ -267,7 +246,6 @@ script = ExtResource( 8 )
 script = ExtResource( 6 )
 
 [node name="RandomSequenceSucceed" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="RandomSequence" type="Node" parent="TestRunner/RandomSequenceSucceed"]
@@ -283,7 +261,6 @@ script = ExtResource( 8 )
 script = ExtResource( 8 )
 
 [node name="RandomSequenceFail" type="Node" parent="TestRunner"]
-editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="RandomSequence" type="Node" parent="TestRunner/RandomSequenceFail"]

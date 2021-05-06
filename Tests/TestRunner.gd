@@ -1,8 +1,11 @@
 extends Task
 
+export var num_runs = 4
+
 var list
 var idx = 0
 var num_failures = 0
+var run_count = 0
 
 var TESTS = [
 	["Until Fail", SUCCEEDED],
@@ -73,3 +76,11 @@ func log_result():
 			status = SUCCEEDED
 			result = "PASSED"
 		add_result("FINISHED", result)
+		run_count += 1
+		if run_count < num_runs:
+			idx = 0
+			add_result("RUN", String(run_count + 1))
+			start()
+			status = RUNNING
+		else:
+			set_process(false)

@@ -24,3 +24,11 @@ func child_success():
 func child_fail():
 	count = 0
 	fail()
+
+func start():
+	count = 0
+	.start()
+
+func cancel():
+	count = 0
+	.cancel()

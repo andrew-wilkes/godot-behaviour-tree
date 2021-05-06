@@ -19,3 +19,11 @@ func child_fail():
 	if current_child >= get_child_count():
 		current_child = 0
 		fail()
+
+func cancel():
+	current_child = 0
+	.cancel()
+
+func start():
+	current_child = 0
+	.start()

@@ -29,3 +29,13 @@ func child_success():
 func child_fail():
 	repeating = false
 	fail()
+
+func start():
+	count = 0
+	repeating = false
+	.start()
+
+func cancel():
+	count = 0
+	repeating = false
+	.cancel()

@@ -7,9 +7,6 @@ class_name RandomSelector, "res://icons/random-selector.png"
 var sequence
 var idx = 0
 
-func _ready():
-	set_sequence()
-
 func set_sequence():
 	idx = 0
 	sequence = range(get_child_count())
@@ -28,3 +25,11 @@ func child_fail():
 	if idx >= sequence.size():
 		set_sequence()
 		fail()
+
+func cancel():
+	set_sequence()
+	.cancel()
+
+func start():
+	set_sequence()
+	.start()

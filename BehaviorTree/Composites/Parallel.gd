@@ -32,3 +32,11 @@ func child_fail():
 			fail()
 	else:
 		fail()
+
+func cancel():
+	num_results = 0
+	.cancel()
+
+func start():
+	num_results = 0
+	.start()

@@ -21,3 +21,11 @@ func run():
 	if idx < sequence.size():
 		status = sequence[idx]
 		idx += 1
+
+func start():
+	idx = 0
+	.start()
+
+func cancel():
+	idx = 0
+	.cancel()

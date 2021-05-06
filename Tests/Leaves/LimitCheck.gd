@@ -13,3 +13,11 @@ func run():
 		fail()
 	else:
 		success()
+
+func start():
+	count = 0
+	.start()
+
+func cancel():
+	count = 0
+	.cancel()

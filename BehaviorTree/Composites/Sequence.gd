@@ -19,3 +19,11 @@ func child_success():
 func child_fail():
 	current_child = 0
 	fail()
+
+func cancel():
+	current_child = 0
+	.cancel()
+
+func start():
+	current_child = 0
+	.start()

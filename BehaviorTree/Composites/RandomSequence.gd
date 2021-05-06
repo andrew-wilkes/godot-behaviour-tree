@@ -28,3 +28,11 @@ func child_success():
 	if idx >= sequence.size():
 		set_sequence()
 		success()
+
+func cancel():
+	idx = 0
+	.cancel()
+
+func start():
+	idx = 0
+	.start()
