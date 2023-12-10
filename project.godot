@@ -6,150 +6,19 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "Task",
-"class": "AlwaysFail",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/AlwaysFail.gd"
-}, {
-"base": "Task",
-"class": "AlwaysSucceed",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/AlwaysSucceed.gd"
-}, {
-"base": "Task",
-"class": "Call",
-"language": "GDScript",
-"path": "res://Tests/Leaves/Call.gd"
-}, {
-"base": "Task",
-"class": "Fail",
-"language": "GDScript",
-"path": "res://Tests/Leaves/Fail.gd"
-}, {
-"base": "StatusSequence",
-"class": "FtoS",
-"language": "GDScript",
-"path": "res://Tests/Leaves/f-s.gd"
-}, {
-"base": "Task",
-"class": "Invert",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/Invert.gd"
-}, {
-"base": "Task",
-"class": "Leaf",
-"language": "GDScript",
-"path": "res://BehaviorTree/Leaf.gd"
-}, {
-"base": "Task",
-"class": "Limit",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/Limit.gd"
-}, {
-"base": "Task",
-"class": "LimitCheck",
-"language": "GDScript",
-"path": "res://Tests/Leaves/LimitCheck.gd"
-}, {
-"base": "Task",
-"class": "Parallel",
-"language": "GDScript",
-"path": "res://BehaviorTree/Composites/Parallel.gd"
-}, {
-"base": "Task",
-"class": "RandomSelector",
-"language": "GDScript",
-"path": "res://BehaviorTree/Composites/RandomSelector.gd"
-}, {
-"base": "Task",
-"class": "RandomSequence",
-"language": "GDScript",
-"path": "res://BehaviorTree/Composites/RandomSequence.gd"
-}, {
-"base": "Task",
-"class": "Repeat",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/Repeat.gd"
-}, {
-"base": "Task",
-"class": "RepeatChild",
-"language": "GDScript",
-"path": "res://Tests/Leaves/RepeatChild.gd"
-}, {
-"base": "Task",
-"class": "Selector",
-"language": "GDScript",
-"path": "res://BehaviorTree/Composites/Selector.gd"
-}, {
-"base": "Task",
-"class": "Sequence",
-"language": "GDScript",
-"path": "res://BehaviorTree/Composites/Sequence.gd"
-}, {
-"base": "Task",
-"class": "StatusSequence",
-"language": "GDScript",
-"path": "res://Tests/Leaves/StatusSequence.gd"
-}, {
-"base": "StatusSequence",
-"class": "StoF",
-"language": "GDScript",
-"path": "res://Tests/Leaves/s-f.gd"
-}, {
-"base": "Task",
-"class": "Succeed",
-"language": "GDScript",
-"path": "res://Tests/Leaves/Succeed.gd"
-}, {
-"base": "Node",
-"class": "Task",
-"language": "GDScript",
-"path": "res://BehaviorTree/Task.gd"
-}, {
-"base": "Task",
-"class": "UntilFail",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/UntilFail.gd"
-}, {
-"base": "Task",
-"class": "UntilSuccess",
-"language": "GDScript",
-"path": "res://BehaviorTree/Decorators/UntilSuccess.gd"
-} ]
-_global_script_class_icons={
-"AlwaysFail": "res://icons/always-fail.png",
-"AlwaysSucceed": "res://icons/always-succeed.png",
-"Call": "",
-"Fail": "",
-"FtoS": "",
-"Invert": "res://icons/invert.png",
-"Leaf": "",
-"Limit": "res://icons/limit.png",
-"LimitCheck": "",
-"Parallel": "res://icons/parallel.png",
-"RandomSelector": "res://icons/random-selector.png",
-"RandomSequence": "res://icons/random-sequence.png",
-"Repeat": "res://icons/repeat.png",
-"RepeatChild": "",
-"Selector": "res://icons/selector.png",
-"Sequence": "res://icons/sequence.png",
-"StatusSequence": "",
-"StoF": "",
-"Succeed": "",
-"Task": "",
-"UntilFail": "res://icons/until-fail.png",
-"UntilSuccess": "res://icons/until-success.png"
-}
+config_version=5
 
 [application]
 
 config/name="Behavior Tree"
 run/main_scene="res://Tests/Test.tscn"
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"

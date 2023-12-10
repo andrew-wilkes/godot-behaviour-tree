@@ -16,8 +16,8 @@ func run():
 
 func start():
 	count = 0
-	.start()
+	super.start()
 
 func cancel():
 	count = 0
-	.cancel()
+	super.cancel()

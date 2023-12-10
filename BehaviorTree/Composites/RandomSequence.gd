@@ -1,8 +1,9 @@
+@icon("res://icons/random-sequence.png")
 extends Task
 
 # All randomly selected children must succeed
 
-class_name RandomSequence, "res://icons/random-sequence.png"
+class_name RandomSequence
 
 var sequence
 var idx = 0
@@ -31,8 +32,8 @@ func child_success():
 
 func cancel():
 	idx = 0
-	.cancel()
+	super.cancel()
 
 func start():
 	idx = 0
-	.start()
+	super.start()

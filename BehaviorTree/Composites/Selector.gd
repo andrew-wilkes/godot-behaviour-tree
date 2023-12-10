@@ -1,8 +1,9 @@
+@icon("res://icons/selector.png")
 extends Task
 
 # One of the children must run successfully
 
-class_name Selector, "res://icons/selector.png"
+class_name Selector
 
 var current_child = 0
 
@@ -22,8 +23,8 @@ func child_fail():
 
 func cancel():
 	current_child = 0
-	.cancel()
+	super.cancel()
 
 func start():
 	current_child = 0
-	.start()
+	super.start()

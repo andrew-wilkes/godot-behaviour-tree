@@ -24,8 +24,8 @@ func run():
 
 func start():
 	idx = 0
-	.start()
+	super.start()
 
 func cancel():
 	idx = 0
-	.cancel()
+	super.cancel()

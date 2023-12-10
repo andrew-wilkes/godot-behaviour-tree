@@ -1,8 +1,9 @@
+@icon("res://icons/until-fail.png")
 extends Task
 
 # Only reports a failure
 
-class_name UntilFail, "res://icons/until-fail.png"
+class_name UntilFail
 
 func run():
 	get_child(0).run()

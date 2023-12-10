@@ -4,7 +4,7 @@ extends Task
 
 class_name Call
 
-export var num_calls = 2
+@export var num_calls = 2
 
 var count = 0
 var repeating = false
@@ -30,9 +30,9 @@ func child_fail():
 func start():
 	count = 0
 	repeating = false
-	.start()
+	super.start()
 
 func cancel():
 	count = 0
 	repeating = false
-	.cancel()
+	super.cancel()
