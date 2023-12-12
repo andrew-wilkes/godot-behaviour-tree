@@ -1,8 +1,9 @@
+@icon("res://icons/sequence.png")
 extends Task
 
 # All children must run successfully
 
-class_name Sequence, "res://icons/sequence.png"
+class_name Sequence
 
 var current_child = 0
 
@@ -22,8 +23,8 @@ func child_fail():
 
 func cancel():
 	current_child = 0
-	.cancel()
+	super.cancel()
 
 func start():
 	current_child = 0
-	.start()
+	super.start()

@@ -1,11 +1,12 @@
+@icon("res://icons/limit.png")
 extends Task
 
 # Will fail if the child task succeeds and gets called again too many times
 
-class_name Limit, "res://icons/limit.png"
+class_name Limit
 
 # Maximum number of times to run
-export(int) var LIMIT = 4
+@export var LIMIT: int = 4
 
 var count = 0
 
@@ -27,8 +28,8 @@ func child_fail():
 
 func start():
 	count = 0
-	.start()
+	super.start()
 
 func cancel():
 	count = 0
-	.cancel()
+	super.cancel()

@@ -1,6 +1,6 @@
 extends Task
 
-export var num_runs = 4
+@export var num_runs = 4
 
 var list
 var idx = 0
@@ -79,7 +79,7 @@ func log_result():
 		run_count += 1
 		if run_count < num_runs:
 			idx = 0
-			add_result("RUN", String(run_count + 1))
+			add_result("RUN", str(run_count + 1))
 			start()
 			status = RUNNING
 		else:

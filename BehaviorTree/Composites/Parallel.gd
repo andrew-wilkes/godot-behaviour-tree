@@ -1,12 +1,13 @@
+@icon("res://icons/parallel.png")
 extends Task
 
 # Run all child Tasks together in SEQUENCE or SELECTOR policy mode
 
-class_name Parallel, "res://icons/parallel.png"
+class_name Parallel
 
 enum { SEQUENCE, SELECTOR }
 
-export(bool) var policy = SEQUENCE
+@export var policy: bool = SEQUENCE
 
 var num_results = 0
 
@@ -35,8 +36,8 @@ func child_fail():
 
 func cancel():
 	num_results = 0
-	.cancel()
+	super.cancel()
 
 func start():
 	num_results = 0
-	.start()
+	super.start()
